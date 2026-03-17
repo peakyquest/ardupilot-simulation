@@ -78,5 +78,5 @@ source ~/.bashrc
 
 echo
 echo "========================================="
-echo " ✅ ArduPilot setup completed successfully!"
+echo "ArduPilot setup completed successfully!"
 echo "========================================="
