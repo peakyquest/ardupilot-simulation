@@ -27,18 +27,20 @@ Then open a **new terminal** so the environment changes take effect.
 
 ### Run the simulation
 
-![Default simulation](doc/default_sim.png)
-
 1. **Start Gazebo** (terminal 1):
 
 ```bash
 gz sim -v4 -r iris_runway.sdf
 ```
 
+<img width="1028" height="911" alt="image" src="https://github.com/user-attachments/assets/4c9233cd-5974-48ab-a588-06a7c0d41577" />
+
+
 2. **Start ArduPilot SITL** (terminal 2):
 
 ```bash
 cd ~/ardupilot     # adjust if needed
+source venv-ardupilot/bin/activate # adjust if created venv
 sim_vehicle.py -v ArduCopter -f gazebo-iris --model JSON --map --console
 ```
 
@@ -49,3 +51,5 @@ STABILIZE> mode guided
 GUIDED> arm throttle
 GUIDED> takeoff 5
 ```
+
+
